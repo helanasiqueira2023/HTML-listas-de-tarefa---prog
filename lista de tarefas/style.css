@@ -1,0 +1,23 @@
+body{
+    margin: 5;
+    background-color: rgb(233, 152, 165);
+ padding: 20;
+}
+
+tarefas{
+   background-color: bisque; 
+}
+
+h2{
+    margin: auto;
+   position: relative;
+}
+
+fundo{
+    background-color: rgb(233, 214, 217);
+}
+
+descricao{
+    border-radius: 10;
+    background-color: pink;
+}
