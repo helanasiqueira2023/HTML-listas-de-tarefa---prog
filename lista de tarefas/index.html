@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>Lista de Tarefas</h2>
-    <div class="fundo">
-    <ul id="tarefas">
-    </ul>
-    <input type="text" name="descricao" id="descricao">
-    <br>
-    <input type="button" value="Adicionar" id="adicionar">
-    <br>
-</div>
-    <h3>Tarefas Finalizadas</h3>
-    <ul id="finalizadas">
-    </ul>
-    <script type="text/javascript" src="script.js"></script>
 
+<body>
+    <main class="conteudo">
+        <h1 class="titulo">Lista de Tarefas</h1>
+        <section class="estrutura-lista">
+            <div>
+                <input type="text" name="input" id="input" class="input" placeholder="Adicionar Tarefa">
+                <button id="botao" class="botao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="ul" class="lista-de-tarefas">
+
+            </ul>
+        </section>
+
+        <h2 class="subtitulo">Tarefas Concluídas</h2>
+        <section class="lista-concluida">
+            <ul id="ul-concluida" class="tarefas-concluidas">
+            </ul>
+        </section>
+    </main>
 
 </body>
+
+</html>
+<script type="text/javascript" src="tarefasconcluidas.js"></script>
+<script type="text/java script" src="java.js"></script>
+</div>
+
+</body>
+
 </html>

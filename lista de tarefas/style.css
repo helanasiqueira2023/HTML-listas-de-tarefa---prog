@@ -1,23 +1,171 @@
-body{
+body {
     margin: 5;
     background-color: rgb(233, 152, 165);
- padding: 20;
+    padding: 20;
 }
 
-tarefas{
-   background-color: bisque; 
+.tarefas {
+    background-color: bisque;
+    text-align: center;
 }
 
-h2{
+h2 {
     margin: auto;
-   position: relative;
+    position: relative;
+    text-align: center;
 }
-
-fundo{
-    background-color: rgb(233, 214, 217);
+.fundo{
+    text-align: center;
 }
-
-descricao{
+.descricao {
     border-radius: 10;
     background-color: pink;
+    text-align: center;
+}
+
+.conteudo{
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+   --color-pink: rgb(235, 150, 221);
+   --color-verde: rgb(102, 179, 172);
+   --color-white: white;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-pink);
+}
+
+.conteudo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.estrutura-lista {
+    padding: 1rem;
+    background-color: var(--color-verde);
+    border-radius: .5rem;
+}
+
+.input,
+.botao {
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.input {
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.botao {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.botao:hover {
+    color: var(--color-pink);
+    background-color: var(--color-black);
+}
+
+.lista-de-tarefas {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.lista-de-tarefas li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: .2rem;
+    padding: .7rem;
+    color: var(--color-white);
+    border-radius: .4rem;
+    transition: .4s;
+}
+
+.lista-de-tarefas li:hover {
+    color: var(--color-black);
+    background-color: var(--color-pink);
+    box-shadow: 1px 4px 10px rgba(63, 60, 60, 0.2);
+}
+
+.lista-de-tarefas li div,
+.tarefas-concluidas li div {
+    display: grid;
+    column-gap: .3rem;
+    grid-template-columns: auto auto;
+    justify-content: right;
+    align-content: center;
+}
+
+.check,
+.lixeira {
+    cursor: pointer;
+}
+
+.check:hover {
+    color: var(--color-pink);
+}
+
+.lixeira:hover {
+    color: var(--color-white);
+}
+
+.subtitulo {
+    color: var(--color-white);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.lista-concluida {
+    padding: 1rem;
+}
+
+.tarefas-concluidas {
+    display: grid;
+    row-gap: .2rem;
+}
+
+.tarefas-concluidas li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .5rem;
+    color: var(--color-white);
+    transition: .4s;
+}
+
+.tarefas-concluidas li p {
+    text-decoration: line-through;
+}
+
+.tarefas-concluidas li:hover {
+    color: var(--color-pink);
+}
+
+.tarefas-concluidas li div .check:hover {
+    color: var(--color-red);
 }
