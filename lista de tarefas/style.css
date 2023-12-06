@@ -29,7 +29,7 @@ h2 {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
-   --color-pink: rgb(235, 150, 221);
+   --color-pink: rgb(172, 33, 149);
    --color-verde: rgb(102, 179, 172);
    --color-white: white;
 
@@ -128,7 +128,7 @@ body {
 }
 
 .check:hover {
-    color: var(--color-pink);
+    color: var(--color-white);
 }
 
 .lixeira:hover {
@@ -163,7 +163,7 @@ body {
 }
 
 .tarefas-concluidas li:hover {
-    color: var(--color-pink);
+    color: var(--color-white);
 }
 
 .tarefas-concluidas li div .check:hover {
